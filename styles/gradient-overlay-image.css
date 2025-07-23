@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.body {
+  max-width: 1140px;
+  margin: 50px auto;
+  padding: 0 10px;
+}
+.btn{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    background-color: #f86ca7;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    margin-top: 10px;
+}
+.title{
+    font-size: 50px;
+    font-weight: 800;
+    color: white;
+}
+.msg{
+    font-size: 25px;
+    font-weight: 300;
+    color: white;
+}
+
+
+
+/* banner one using position */
+.container-1 {
+  position: relative;
+  display: block;
+}
+.container-1-img {
+  position: relative;
+  width: 100%;
+  display: block;
+  border-radius: 15px;
+}
+.container-1-gradient {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #f86ca7, #ffed00);
+  opacity: 0.5;
+  border-radius: 15px;
+  z-index: 1;
+}
+.container-1-text-btn {
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+}
+
+
+/* gradient banner design using background image */
+.container-2-text-btn{
+    width: 100%;
+    height: 550px;
+    border-radius: 15px;
+    background: linear-gradient(45deg, #f86ca67a, #ffee007a), url(../images/banner.png);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container-2-text-btn > .msg{
+    text-align: center;
+    width: 50%;
+}
